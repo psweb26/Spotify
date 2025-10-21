@@ -1,0 +1,239 @@
+
+@media (max-width: 1200px) {
+    .cardContainer {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 15px;
+    }
+    
+    .songList .info {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .container {
+        height: 100vh;
+    }
+    
+    .icon {
+        display: block;
+    }
+
+    .left {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        bottom: 60px;
+        width: 280px;
+        height: 100vh;
+        z-index: 1000;
+        transition: all 0.3s ease;
+        overflow-y: auto;
+        padding-top: 20px;
+        background-color: #121212;
+    }
+
+    .left.active {
+        left: 0;
+        box-shadow: 4px 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .right {
+        width: 100vw;
+        transition: margin-left 0.3s ease;
+    }
+
+    .playbar {
+        width: 100vw;
+        left: 0;
+        border-radius: 0;
+    }
+
+    .left.active ~ .playbar {
+        left: 280px;
+        width: calc(100vw - 280px);
+    }
+
+    .close {
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+    .home .logo {
+        max-width: 140px;
+        margin: 0 auto 20px;
+    }
+
+    .library {
+        padding-bottom: 80px;
+    }
+
+    .footer {
+        position: relative;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+    
+    .cardContainer {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .songList ul li {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .songList .info div:first-child {
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .songList .info div:last-child {
+        font-size: 11px;
+    }
+
+    .cardContainer {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 10px;
+        padding: 0 15px;
+    }
+    
+    .playbar {
+        height: 70px;
+        padding: 5px;
+    }
+    
+    .songbuttons {
+        gap: 15px;
+        bottom: 25px;
+    }
+    
+    .songInfo {
+        max-width: 150px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    .left {
+        width: 85vw;
+    }
+
+    .left.active ~ .playbar {
+        width: calc(100vw - 85vw);
+        left: 85vw;
+    }
+
+    .close {
+        right: 15px;
+        top: 15px;
+        width: 25px;
+    }
+
+    .cardContainer {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 8px;
+    }
+    
+    .buttons button {
+        width: 80px;
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+    }
+    
+    .songList .info {
+        width: 180px;
+    }
+    
+    .playnow span {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardContainer {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    
+    .songInfo {
+        max-width: 120px;
+        font-size: 12px;
+    }
+    
+    .songTime {
+        font-size: 10px;
+        min-width: 80px;
+    }
+    
+    .playnow img {
+        display: none;
+    }
+    
+    .home .logo {
+        max-width: 120px;
+        margin: 0 auto 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .cardContainer {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        gap: 6px;
+    }
+    
+    .songList .info {
+        width: 140px;
+    }
+    
+    .songInfo {
+        max-width: 100px;
+    }
+    
+    .songbuttons {
+        gap: 10px;
+    }
+    
+    #previous, #next {
+        width: 20px;
+        height: 20px;
+    }
+    
+    #play {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Special cases for landscape and very small screens */
+@media (max-height: 450px) and (orientation: landscape) {
+    .cardContainer,
+    .songList {
+        max-height: 40vh;
+    }
+
+    .playbar {
+        height: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    .songTime {
+        display: none;
+    }
+    
+    .songInfo {
+        max-width: 80px;
+    }
+    
+    .cardContainer {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+}

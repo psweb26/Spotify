@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.bg-grey{
+    background-color:#121212;
+}
+
+.bdr-radius{
+    border-radius: 7px;
+}
+
+.invert{
+    filter:invert(1);
+}
+
+.bg-black{
+    background-color:black;
+    color: white;
+}
+
+
+.margin1{
+    margin:7px;
+}
+
+.padding1{
+    padding: 11px;
+}
+
+.font{
+    font-family: "Roboto", sans-serif;
+    font-weight: 730;
+}
+
+.libcolor{
+    color: #656565;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+
+}
+
+.flex1{
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    gap:12px;
+}
+
+.flex{
+    display:flex;
+}
+
+.color{
+    color:#ababab;
+}
+.cursor{
+    cursor: pointer;
+}
+
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px;               /* Width of the scrollbar */
+    height: 12px;              /* Height for horizontal scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1e1e1e;        /* Track color (dark background) */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #3a3a3a;        /* Scrollbar color */
+    border-radius: 10px;        
+    border: 2px solid #1e1e1e;  /* Border to blend with the track */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;           /* Color on hover */
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: thin;      /* Thin scrollbar */
+    scrollbar-color: #3a3a3a #1e1e1e; /* Thumb and track color */
+  }
+  
